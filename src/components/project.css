@@ -22,6 +22,12 @@
 
 
 }
+.thumnail{
+    text-align: center;
+    font-size: 3vw;
+    background-color: silver;
+    color: red;
+}
 /* .c :hover{
 
 } */

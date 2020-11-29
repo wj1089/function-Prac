@@ -5,7 +5,7 @@ import {Button} from 'react-bootstrap'
 import HoverImage from "react-hover-image"
 import reactHook from "../resource/reacthooks.png"
 import reactHook2 from "../resource/reactHook2.jpg"
-
+import "./project.css"
 
 const Popup = () => {
     const [show, setShow] = useState(false);
@@ -13,11 +13,14 @@ const Popup = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
   
+
     return (
         <>
-        <a variant="primary" onClick={handleShow}>
+        <p 
+         className="thumnail"
+         onClick={handleShow}>
             Launch demo modal
-        </a>
+        </p>
 
         <Modal show={show} onHide={handleClose} animation={false}>
             <Modal.Header closeButton>
@@ -28,7 +31,6 @@ const Popup = () => {
             <HoverImage className="c" 
                     src={reactHook}
                     hoverSrc={reactHook2}
-                    // onClick={()=}
                     // onMouseOut={()=>setShown(true)}
                     // onMouseOver={()=>setShown(false)}
                     // style="transition: ease-out 0.3s"
@@ -43,6 +45,9 @@ const Popup = () => {
 
                 <Button variant="primary" onClick={handleClose}>
                     Save Changes
+                </Button>
+                <Button  href="https://www.naver.com">
+                    Move
                 </Button>
             </Modal.Footer>
         </Modal>
