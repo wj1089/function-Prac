@@ -1,0 +1,27 @@
+.modalContent{
+     border: 1px;
+     width: 55vw;
+     height: 50vh;
+     background-color: aqua;
+}
+.contentBody{
+    width: 55vw;
+    height: 40vh;
+    background-color:  whitesmoke;
+}
+.a{
+    word-break: Hooks;
+}
+.b{
+    color: red;
+}
+.c{
+    width: 30vw;
+    height: 20vh;
+    border-color: tomato;
+
+
+}
+/* .c :hover{
+
+} */
